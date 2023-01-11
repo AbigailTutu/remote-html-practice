@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+
+	<style type="text/css">
+		body{
+			color: white;
+			font-size: 40px;
+			background-image: url(https://media.istockphoto.com/photos/woman-hand-holding-global-network-connection-internet-communication-picture-id1328486545?b=1&k=20&m=1328486545&s=170667a&w=0&h=NgVASbPBv7gI7N5BL42R7dGDM-Ida71vCzSL-cPu1nI=);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			text-align: center;
+
+		}
+
+		button:hover{
+			background-color: violet;
+		}
+	</style>
+
+</head>
+<body>
+   <h1>Sign Up</h1>
+
+   <form action="submit.html" method="POST">
+   	<div id="First-name">
+		   	<label>First Name</label>
+		   	<br>
+		   	<span title="Please fill out this field"><input type="text" name="First-name" required></span>
+      </div>
+
+
+      <div id="Surname">
+		   	<label>Surname</label>
+		   	<br>
+		   	<input type="text" name="Surname">
+	   </div>
+
+
+	   <div id="Age">
+				<label>Age</label>
+				<br>
+				<input type="number" name="age" min="20" max="35">
+      </div>
+
+
+      <div>
+		    	<label>Date of birth</label>
+		    	<br>
+		    	<input type="Date" name="Date-of-birth">
+      </div>
+
+
+      <div id="Password">
+		    	<label>Password</label>
+		    	<br>
+		    	<input type="Password" name="Password">
+      </div>
+
+
+      <div id="Are-you-a-student">
+		    	<label>Are you a student</label>
+		    	<br>
+		    	<label>Yes</label>
+		    	<input type="radio" name="Are-you-a-student" value="Yes">
+		    	<label>No</label>
+		    	<input type="radio" name="Are-you-a-student" value="No">
+		    	<label>Other</label>
+		    	<input type="radio" name="Are-you-a-student" value="Other">
+      </div>
+
+      <div id="Language">
+	      	<label>Language</label>
+	    	   <br>
+	    	   <span>
+	    	   	<input type="checkbox" name="">English
+	    	   </span>
+	    	   <span>
+	    	   	<input type="checkbox" name="">Ewe
+	    	   </span>
+	    	   <span>
+	    	   	<input type="checkbox" name="">Twi
+	    	   </span>
+	    	   <span>
+	    	   	<input type="checkbox" name="">French
+	    	   </span>
+      </div>
+
+      <div id="Favourite food">
+      	<label>What food do you like best?</label>
+      	<br>
+         <select name="Lunch">
+         	<option value="Pizza">Pizza</option>
+         	<option value="Burger">Burger</option>
+         	<option value="Frenchflies">Frenchflies</option>
+         	<option value="Friedrice">Friedrice</option>
+         	<option value="Noodles">Noodles</option>
+         </select>
+      </div>
+
+      <div id="Favourite-movie">
+      	<label>What movie do you like best?</label>
+      	<br>
+      	<input type="text" name="movie" list="movies" required>
+      	<datalist id="movies">
+      		<option value="Red-Notice"></option>
+      		<option value="Free-guy"></option>
+      		<option value="Blacklist"></option>
+      		<option value="Boss-Baby"></option>
+      	</datalist>
+      </div>
+
+      <div id="About-yourself">
+      	<label>About yourself</label>
+      	<br>
+      	<textarea name="about-yourself" rows="6" cols="40" minlength="10" maxlength="250">We want to know more about you</textarea>
+      </div>
+
+      <div id="Submit">
+    	    <button>Submit</button>
+      </div>
+   </form>
+</body>
+</html>
